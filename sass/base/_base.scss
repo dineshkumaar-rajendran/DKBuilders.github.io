@@ -1,0 +1,41 @@
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    
+}
+
+html{
+    //this defines 1rem is
+    font-size: 62.5%; //1 rem = 10px/16px = 62.5%
+
+    @include respond(tab-land){ //width <100px
+        font-size:56.25% !important; //1rem = 9px  9/16px = 56.25% 
+    }
+
+    @include respond(tab-port){ //900px
+        font-size:50% !important; //1rem = 8px  8/16px = 50%
+    }
+
+    @include respond(big-desktop){
+        font-size:75% !important; //1rem = 12px  12/16px = 75%
+    }
+}
+h1 
+{
+  width: 950px;
+  word-wrap: break-word;
+  display: table-cell;
+
+}
+
+body{
+    box-sizing: border-box;
+    padding: 3rem !important;
+
+    @include respond(tab-port){ //900px
+        padding: 0 !important;
+    }
+}

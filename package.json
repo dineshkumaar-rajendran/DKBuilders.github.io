@@ -1,0 +1,14 @@
+{
+  "name": "DK",
+  "version": "1.0.0",
+  "description": "loading page of dkbuilders",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "DK",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  }
+}
